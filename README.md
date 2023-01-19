@@ -13,6 +13,7 @@ Premium file cloner, Only for paid user
 - pip install mechanize
 - git clone https://github.com/SPY1x1/VIP
 - cd VIP
+- git pull
 - python spy.py
 
 # NOTE : 
