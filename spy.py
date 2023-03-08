@@ -1,7 +1,10 @@
-import os, sys
+import os
+import platform
 os.system('clear')
-os.system('git pull')
-try:
+os.system("git pull")
+b = platform.architecture()[0]
+if b == '64bit':
     __import__("VIP").Spy()
-except Exception as e:
-    exit(str(e))
+    
+elif b == '32bit':
+    __import__("VIP32").Spy()
